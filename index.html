@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Parallax effect</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,200,500,700,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <style>
+        .ad {
+            position: absolute;
+            width: 300px;
+            height: 250px;
+            border: 1px solid #ddd;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 250px;
+        }
+        .ad .close {
+            position: absolute;
+            font-family: 'ionicons';
+            width: 20px;
+            height: 20px;
+            color: #fff;
+            background-color: #999;
+            font-size: 20px;
+            left: -20px;
+            top: -1px;
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+            cursor: pointer;
+        }
+
+    </style>
+    <script type="text/javascript">
+        $(function() {
+            $('.close').click(function() {
+                $('.ad').css('display', 'none');
+            })
+        })
+    </script>
+</head>
+<body>
+<header>
+    Parallax Fix Background effect
+</header>
+<div class="parallax1"></div>
+<main>
+    <section>
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ante. Mauris eleifend, quam a vulputate dictum, massa quam dapibus leo, eget vulputate orci purus ut lorem.
+        </div>
+    </section>
+    <section class="light-brown-bg">
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ante. Mauris eleifend, quam a vulputate dictum, massa quam dapibus leo, eget vulputate orci purus ut lorem.
+        </div>
+    </section>
+    <div class="parallax2"></div>
+    <section class="light-bg">
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ante. Mauris eleifend, quam a vulputate dictum, massa quam dapibus leo, eget vulputate orci purus ut lorem.
+        </div>
+    </section>
+    <section>
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at ante. Mauris eleifend, quam a vulputate dictum, massa quam dapibus leo, eget vulputate orci purus ut lorem.
+        </div>
+    </section>
+</main>
+</body>
+</html>
